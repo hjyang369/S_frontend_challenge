@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import "./timer.css";
 
-export default function Main() {
+export default function Timer() {
   const [totalSeconds, setTotalSeconds] = useState(0);
   const [isActive, setIsActive] = useState(false);
 
