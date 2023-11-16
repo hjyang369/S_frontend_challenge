@@ -42,13 +42,26 @@
   visibility: hidden;
 }
 
+.modal {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.close {
+  text-align: end;
+  display: block;
+}
+
 .memoContainer {
-  position: absolute;
-  width: 220px;
-  height: 185px;
-  padding: 0px;
-  background: #ffffff;
-  border-radius: 10px;
-  border: #7f7f7f solid 1px;
-  z-index: 1;
+  display: flex;
+  gap: 3px;
+}
+
+.textarea {
+  resize: none;
+}
+.createdMemo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
