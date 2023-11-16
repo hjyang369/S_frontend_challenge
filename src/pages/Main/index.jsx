@@ -22,6 +22,13 @@ export default function Main() {
       >
         to-do-list
       </button>
+      <button
+        onClick={() => {
+          moveToPage("/calender");
+        }}
+      >
+        calender
+      </button>
     </div>
   );
 }

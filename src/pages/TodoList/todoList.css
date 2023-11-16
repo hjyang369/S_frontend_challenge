@@ -10,7 +10,7 @@
   width: 496px;
   height: 369px;
 }
-.categoryBtns {
+.categoryButtons {
   display: flex;
   justify-content: space-between;
 }
@@ -37,8 +37,7 @@
   border: 0;
   font-size: 18px;
 }
-.addBtn {
-}
+
 .result {
   display: flex;
   flex-direction: column;

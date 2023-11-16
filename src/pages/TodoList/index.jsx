@@ -6,7 +6,7 @@ const categoryArr = ["전체", "완료", "미완료"];
 
 export default function TodoList() {
   const [selectCategory, setSelectCategory] = useState("전체");
-  const [todos, setTodos] = useState([]);
+  const [todo, setTodo] = useState([]);
   const [inputValue, setInputValue] = useState("");
   const [heart, setHeart] = useState("");
 
@@ -16,8 +16,8 @@ export default function TodoList() {
 
   const handleAddTodo = () => {
     if (inputValue.trim() !== "" && heart.trim() !== "") {
-      setTodos([
-        ...todos,
+      setTodo([
+        ...todo,
         { text: inputValue, completed: false, priority: heart },
       ]);
       setInputValue("");
@@ -26,9 +26,9 @@ export default function TodoList() {
   };
 
   const handleToggleComplete = (index) => {
-    const updatedTodos = [...todos];
-    updatedTodos[index].completed = !updatedTodos[index].completed;
-    setTodos(updatedTodos);
+    const updatedTodo = [...todo];
+    updatedTodo[index].completed = !updatedTodo[index].completed;
+    setTodo(updatedTodo);
   };
 
   const changeCategory = (category) => {
@@ -40,15 +40,15 @@ export default function TodoList() {
   };
 
   const handleRemoveTodo = (index) => {
-    const updatedTodos = todos.filter((_, i) => i !== index);
-    setTodos(updatedTodos);
+    const updatedTodo = todo.filter((_, i) => i !== index);
+    setTodo(updatedTodo);
   };
 
   return (
     <div className="todoListContainer">
       <div className="todoList">
         <h1>TO DO LIST</h1>
-        <div className="categoryBtns">
+        <div className="categoryButtons">
           {categoryArr.map((name, idx) => {
             return (
               <button
@@ -99,7 +99,7 @@ export default function TodoList() {
         </div>
 
         <div className="result">
-          {todos.map((content, idx) => {
+          {todo.map((content, idx) => {
             return (
               <div className="todo" key={idx}>
                 <div className="content">

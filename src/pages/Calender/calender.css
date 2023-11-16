@@ -1,0 +1,54 @@
+.calendar {
+  font-family: Arial, sans-serif;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 300px;
+  margin: 0 auto;
+  padding: 10px;
+  text-align: center;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.weekdays {
+  display: flex;
+  justify-content: space-between;
+  background-color: #eee;
+  padding: 5px;
+}
+
+.weekdays > div {
+  width: calc(100% / 7);
+}
+
+.days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+}
+
+.day {
+  padding: 5px;
+  border: 1px solid #ccc;
+  position: relative;
+}
+
+.empty {
+  visibility: hidden;
+}
+
+.memoContainer {
+  position: absolute;
+  width: 220px;
+  height: 185px;
+  padding: 0px;
+  background: #ffffff;
+  border-radius: 10px;
+  border: #7f7f7f solid 1px;
+  z-index: 1;
+}
