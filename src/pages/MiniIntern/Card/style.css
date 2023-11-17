@@ -1,0 +1,21 @@
+.cardContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  width: 216px;
+  height: 260px;
+  border-radius: 5px;
+}
+
+.img {
+  width: 216px;
+  height: 162px;
+  border-radius: 5px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}

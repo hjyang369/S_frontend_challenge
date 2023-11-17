@@ -29,6 +29,13 @@ export default function Main() {
       >
         calender
       </button>
+      <button
+        onClick={() => {
+          moveToPage("/clone");
+        }}
+      >
+        clone
+      </button>
     </div>
   );
 }

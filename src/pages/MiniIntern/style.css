@@ -1,0 +1,22 @@
+.mainContainer {
+  padding: 50px 210px;
+}
+.mainImg {
+  /* display: grid; */
+  display: flex;
+  gap: 15px;
+}
+.img1 {
+  width: 616px;
+  height: 400px;
+}
+.img2 {
+  width: 296px;
+  height: 400px;
+}
+
+.assignmentCard {
+  display: flex;
+  flex-wrap: wrap;
+  width: 910px;
+}
