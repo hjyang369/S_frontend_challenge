@@ -36,6 +36,13 @@ export default function Main() {
       >
         clone
       </button>
+      <button
+        onClick={() => {
+          moveToPage("/slide");
+        }}
+      >
+        slide
+      </button>
     </div>
   );
 }

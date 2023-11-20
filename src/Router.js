@@ -5,6 +5,7 @@ import Timer from "./pages/Timer/index";
 import TodoList from "./pages/TodoList";
 import Calender from "./pages/Calender";
 import Clone from "./pages/MiniIntern/index";
+import Slide from "./pages/Slide";
 
 const Router = () => {
   return (
@@ -15,6 +16,7 @@ const Router = () => {
         <Route path="/todoList" element={<TodoList />} />
         <Route path="/calender" element={<Calender />} />
         <Route path="/clone" element={<Clone />} />
+        <Route path="/slide" element={<Slide />} />
       </Routes>
     </BrowserRouter>
   );
