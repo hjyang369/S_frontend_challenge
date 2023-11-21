@@ -23,7 +23,7 @@ export default function Slide() {
     const interval = setInterval(() => {
       const nextIndex = (imgIdx + 1) % images.length;
       setImgIdx(nextIndex);
-    }, 3000);
+    }, 2000);
 
     return () => clearInterval(interval);
   }, [imgIdx, images.length]);
