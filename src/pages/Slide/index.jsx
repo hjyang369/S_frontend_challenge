@@ -35,6 +35,7 @@ export default function Slide() {
       </button>
       <div className="imgContainer">
         <img alt="이미지" src={images[imgIdx]}></img>
+        <p className="imgText">미니인턴 클론</p>
       </div>
       <button className="moveBtn" onClick={plusIdx}>
         &#62;

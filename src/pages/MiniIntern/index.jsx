@@ -1,6 +1,7 @@
 import "./style.css";
 import Nav from "./Nav/index";
 import Card from "./Card";
+import Slide from "../Slide";
 
 export default function Clone() {
   return (
@@ -27,6 +28,7 @@ export default function Clone() {
             return <Card key={idx} />;
           })}
         </div>
+        <Slide />
       </main>
     </div>
   );
