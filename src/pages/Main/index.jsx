@@ -43,6 +43,13 @@ export default function Main() {
       >
         slide
       </button>
+      <button
+        onClick={() => {
+          moveToPage("/nav");
+        }}
+      >
+        nav
+      </button>
     </div>
   );
 }
