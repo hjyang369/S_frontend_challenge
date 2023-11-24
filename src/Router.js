@@ -7,6 +7,7 @@ import Calender from "./pages/Calender";
 import Clone from "./pages/MiniIntern/index";
 import Slide from "./pages/Slide";
 import Nav from "./pages/Nav";
+import Login from "./pages/Login";
 
 const Router = () => {
   return (
@@ -19,6 +20,7 @@ const Router = () => {
         <Route path="/clone" element={<Clone />} />
         <Route path="/slide" element={<Slide />} />
         <Route path="/nav" element={<Nav />} />
+        <Route path="/login" element={<Login />} />
       </Routes>
     </BrowserRouter>
   );

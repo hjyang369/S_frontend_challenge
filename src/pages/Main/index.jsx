@@ -50,6 +50,13 @@ export default function Main() {
       >
         nav
       </button>
+      <button
+        onClick={() => {
+          moveToPage("/login");
+        }}
+      >
+        login
+      </button>
     </div>
   );
 }
